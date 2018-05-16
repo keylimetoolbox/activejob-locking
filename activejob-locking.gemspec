@@ -13,11 +13,13 @@ Gem::Specification.new do |s|
   s.files            += Dir.glob('test/**/*')
 
   s.add_dependency('activejob', '~> 5.0')
+  s.add_dependency('activesupport', '~> 5.0')
   s.add_development_dependency('minitest', '> 5.10.0')
   s.add_development_dependency('redis-mutex')
   s.add_development_dependency('redis-semaphore')
   s.add_development_dependency('redlock')
   s.add_development_dependency('suo')
+  s.add_development_dependency('rake')
 
   s.description       = <<desc
 activejob-locking lets you control how ActiveJobs are enqueued and performed:

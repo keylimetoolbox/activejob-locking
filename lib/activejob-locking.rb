@@ -1,3 +1,6 @@
+require 'active_job'
+require 'active_support'
+
 require 'activejob/locking/adapters/base'
 require 'activejob/locking/adapters/memory'
 
