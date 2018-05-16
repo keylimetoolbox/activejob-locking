@@ -14,6 +14,8 @@ module ActiveJob
 
         def lock
           self.lock_token = self.lock_manager.lock
+        rescue Suo::LockClientError
+          nil
         end
 
         def unlock
